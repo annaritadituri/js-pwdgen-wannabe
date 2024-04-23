@@ -13,8 +13,8 @@ console.log("Cognome: " + cognome);
 let colorePreferito = prompt("Inserisci il tuo colore preferito:");
 console.log("Colore preferito: " + colorePreferito);
 
-//Creiamo la password
-const password = (`${nome}${cognome}${colorePreferito}21`);
+//Creiamo la password combinando gli input con un numero random tra 0 e 100
+const password = (`${nome}${cognome}${colorePreferito}${Math.floor(Math.random() * 101)}`);
 console.log(password);
 
 //Visualizziamo la password sulla pagina
